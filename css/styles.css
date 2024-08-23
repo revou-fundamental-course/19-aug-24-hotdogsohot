@@ -45,7 +45,7 @@
 }
 article>main>div{
     border: 1px solid black;
-    height: 500px;
+    height: 1000px;
 
     background-image: url(https://picsum.photos/2000);
     margin: 10px 10px;
@@ -62,4 +62,27 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.section1>header>h1{
+    margin: 0;
+}
+
+.section1>header{
+    margin: 30px 70px;
+}
+.section1>main{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 100px;
+    column-gap: 10px;
+}
+.section1>main>img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-size: cover;
+
 }
