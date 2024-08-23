@@ -5,12 +5,15 @@
     width: 50px;
     background-image: url(https://picsum.photos/200);
     border-radius: 50%;
+    margin-left: 10px;
 }
 
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .navigation>navigation>a{
@@ -18,10 +21,45 @@
     color: black;
     border: 1px solid #ccc;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 5px 25px;
+    font-size: 13px;
+}
+
+.navigation>navigation>a:first-child{
+    border-radius: 10px 0 0 10px
+}
+.navigation>navigation>a:last-child{
+    border-radius: 0 10px 10px 0
+}
+
+.navigation>navigation{
+    display: flex;
+    margin-right: 10px;
+
+}
+.headerarticle{
+    margin: 30px 70px;
+}
+.headerarticle>h1{
+    margin: 0;
+}
+article>main>div{
+    border: 1px solid black;
+    height: 500px;
+
+    background-image: url(https://picsum.photos/2000);
+    margin: 10px 10px;
+    background-size:cover;
+    background-position: center;
+
+}
+article>main{
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
 }
 
 body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
