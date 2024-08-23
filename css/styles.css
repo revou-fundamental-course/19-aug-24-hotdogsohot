@@ -1,0 +1,27 @@
+/* Ini File CSS*/
+.logo{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    border-radius: 50%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation>navigation>a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
