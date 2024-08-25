@@ -12,7 +12,7 @@
         </header>
         <navigation>
             <a href="#">Home</a>
-            <a href="#">Our Profile</a>
+            <a href="#Section1">Our Profile</a>
             <a href="#">Achievement</a>
             <a href="#">Message Us</a>
         </navigation>
@@ -24,21 +24,60 @@
             <p>WORK IN PROGRESS</p>
         </header>
         <main>
-            <div></div>
+          <div></div>
         </main>
     </article>
 
     <section class="section1">
         <header>
-            <h1>Our Facilitation</h1>
+            <h1 id="Section1">Our Founder</h1>
         </header>
         <main>
-            <img src="Media/images.jpeg">
-            <img src="Media/images2.jpeg">
-            <p>placeholder</p>
+            <div></div>
+            <div></div>
+            <div></div>
             <p>Mulyono</p>
-            <p>Wowo</p>
+            <p>Prabowo</p>
+            <p>Anies</p>
         </main>
     </section>
+
+    <section class="section2">
+        <header><h1>Message Us!</h1></header>
+        <main class="mainsection2">
+            <form class="form">
+                <label for="nama">Nama</label>
+                <span>:</span>
+                <input id="nama" type="text">
+                
+                <label for="tl">Tanggal Lahir</label>
+                <span>:</span>
+                <input id="tl" type="date">
+
+                <label for="kelamin">Jenis Kelamin</label>
+                <span>:</span>
+                <div>
+                    <input type="radio" name="jeniskelamin" id="laki">
+                    <label for="laki" style="margin-right: 8px;">Laki-Laki</label>
+                    <input type="radio" name="jeniskelamin" id="perempuan" >
+                    <label for="perempuan">Perempuan</label>
+                </div>
+                <label for="pesan">Pesan</label>
+                <span class="textspan">:</span>
+                <textarea></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <userdata class="userdata">
+                <div>
+                </div>
+            </userdata>
+        </main>
+    </section>
+
+    <footer>
+        <p>Created By Mirza</p>
+    </footer>
 </body>
 </html>

@@ -45,10 +45,10 @@
 }
 article>main>div{
     border: 1px solid black;
-    height: 1000px;
-
+    width: auto;
+    height: 578px;
     background-image: url(https://picsum.photos/2000);
-    margin: 10px 10px;
+    margin: 10px 0;
     background-size:cover;
     background-position: center;
 
@@ -62,6 +62,12 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+
+}
+.section1{
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .section1>header>h1{
@@ -75,14 +81,88 @@ body{
     display: grid;
     grid-template-columns: 200px 200px 200px;
     justify-items: center;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     margin: 0 100px;
     column-gap: 10px;
 }
-.section1>main>img{
+.section1>main>div{
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background-size: cover;
+    background-size:cover;
 
 }
+.section1>main>p{
+    margin: 0   ;
+    margin-top: 13px;
+}
+.section1>main>div:nth-child(1){
+    background-image: url(../Media/images.jpeg);
+}
+
+.section1>main>div:nth-child(2){
+    background-image: url(../Media/images2.jpeg);
+}
+.section1>main>div:nth-child(3){
+    background-image: url(../Media/images3.jpeg);
+}
+
+.section2{
+    padding: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.section2>header{
+    margin: 30px 70px;
+}
+.form{
+    margin:0 0 0 70px;
+    display: grid;
+    grid-template-columns: 110px 10px 300px;
+    align-self: flex-start;
+    row-gap: 10px;
+}
+
+.form>input{
+    padding: 5px;
+}
+.form>textarea{
+    height: 100px;
+    width: auto;
+}
+
+.form>label[for="pesan"]{
+    align-self: flex-start;
+}
+
+.textspan{
+    align-self: flex-start;
+}
+
+.form>button{
+    grid-column:1/4
+}
+
+.mainsection2{
+    display: flex;
+    column-gap: 1px;
+    justify-content: space-between;
+
+}
+
+.userdata{
+    border: 1px solid black;
+    margin: 20px 70px 20px 0;
+    width: 500px;
+
+}
+
+footer>p{
+    text-align: right;
+    margin: 0 40 30 0;
+}
+
+
+
+
+
