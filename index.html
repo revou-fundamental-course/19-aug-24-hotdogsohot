@@ -6,78 +6,134 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navigation">
-        <header>
-            <div class="logo"></div>
-        </header>
-        <navigation>
-            <a href="#">Home</a>
-            <a href="#Section1">Our Profile</a>
-            <a href="#">Achievement</a>
-            <a href="#">Message Us</a>
-        </navigation>
-    </nav>
-
-    <article>
-        <header class="headerarticle">
-            <h1>Welcome to our website, user!</h1>
-            <p>WORK IN PROGRESS</p>
-        </header>
-        <main>
-          <div></div>
-        </main>
-    </article>
-
-    <section class="section1">
-        <header>
-            <h1 id="Section1">Our Founder</h1>
-        </header>
-        <main>
-            <div></div>
-            <div></div>
-            <div></div>
-            <p>Mulyono</p>
-            <p>Prabowo</p>
-            <p>Anies</p>
-        </main>
-    </section>
-
-    <section class="section2">
-        <header><h1>Message Us!</h1></header>
-        <main class="mainsection2">
-            <form class="form">
-                <label for="nama">Nama</label>
-                <span>:</span>
-                <input id="nama" type="text">
-                
-                <label for="tl">Tanggal Lahir</label>
-                <span>:</span>
-                <input id="tl" type="date">
-
-                <label for="kelamin">Jenis Kelamin</label>
-                <span>:</span>
-                <div>
-                    <input type="radio" name="jeniskelamin" id="laki">
-                    <label for="laki" style="margin-right: 8px;">Laki-Laki</label>
-                    <input type="radio" name="jeniskelamin" id="perempuan" >
-                    <label for="perempuan">Perempuan</label>
+    <div class="maincontent">
+        <nav class="navigation">
+            <header>
+                <div class="logo"></div>
+            </header>
+            <navigation>
+                <a href="#">Home</a>
+                <a href="#TentangSekolah">Tentang Sekolah</a>
+                <a href="#FasilitasSekolah">Fasilitas Sekolah</a>
+                <a href="#Section1">Penemu Sekolah</a>
+                <a href="#Section2">Message Us</a>
+            </navigation>
+        </nav>
+    
+        <article class="article1">
+            <header class="headerarticle">
+                <h1>Welcome to our website, <span id="user"></span></h1>
+                <p>Kamu bisa melihat info tentang sekolah kami disini</p>
+            </header>
+            <main>
+                <header>
+                    <div class="MySlides"></div>
+                    <div class="MySlides"></div>
+                    <div class="MySlides"></div>
+                </header>
+                <div class="button">
+                    <button class="buttonslide" onclick="currentSlide(1)" ></button>
+                    <button class="buttonslide" onclick="currentSlide(2)"></button>
+                    <button class="buttonslide" onclick="currentSlide(3)"></button>
+                    
                 </div>
-                <label for="pesan">Pesan</label>
-                <span class="textspan">:</span>
-                <textarea></textarea>
+            </main>
+        </article>
 
-                <button type="submit">Submit</button>
-            </form>
+        <article class="article2">
+            <section class="article2section1 anchor-offset" id="TentangSekolah">
+                <header><h1>Tentang sekolah</h1></header>
+                <p>
+                    Sekolah kejuruan ini ditemukan pada tahun 1965 oleh 3 tokoh, yakni Mulyono, Prabowo Subianto, 
+                    dan Anies Baswedan.
+                    <br> Terletak pada Jl. Demang Lebar Daun, sekolah ini memiliki 5 jurusan pilihan bermutu.
+                    <br><br> Sekolah ini sudah menjalani kerjasama dengan beberapa perusahaan agar sistem 
+                    pembelajaran sesuai <br>dengan standar di dunia kerja.
+                    <br><br>5 Jurusan pilihan :
+                    <ul style=" list-style-position:inside">
+                        <li>Teknik Komputer Jaringan</li>
+                        <li>Teknik Mesin</li>
+                        <li>Teknik Geomatika</li>
+                        <li>Teknik Mekatronika</li>
+                        <li>Teknik Listrik</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="article2section2 anchor-offset" id="FasilitasSekolah">
+                <header><h1>Fasilitas Sekolah</h1></header>
+                <p>Sekolah ini sudah menyediakan fasilitas yang terbaik di seluruh provinsi
+                    agar proses <br> pembelajaran anak didik siswa tidak terganggu dan menjadi nyaman
+                </p>
+                    <ul style=" list-style-position:inside">
+                        <li>Kantin yang nyaman dan bersih</li>
+                        <li>Ruang pembelajaran full AC + WiFi</li>
+                        <li>CCTV di setiap ruang pembelajaran</li>
+                        <li>Area parkiran yang luas dengan keamanan terjaga</li>
+                        <li>Perpustakaan digital</li>
+                    </ul>
+            </section>
+        </article>
 
-            <userdata class="userdata">
-                <div>
+    
+        <section class="section1 anchor-offset" id="Section1">
+            <header>
+                <h1>Penemu Sekolah</h1>
+            </header>
+            <main>
+                <div class="image1">
+                    <div style="background-image: url(./Media/images.jpeg);"></div>
+                    <p>Mulyono</p>
                 </div>
-            </userdata>
-        </main>
-    </section>
+                <div class="image1">
+                    <div style="background-image: url(./Media/images2.jpeg);"></div>
+                    <p>Prabowo Subianto</p>
+                </div>
+                <div class="image1">
+                    <div style="background-image: url(./Media/images3.jpeg);"></div>
+                    <p>Anies Baswedan</p>
+                </div>
+            </main>
+        </section>
+    
+        <section class="section2 anchor-offset" id="Section2">
+            <header><h1>Message Us</h1></header>
+            <main class="mainsection2">
+                <form class="form" name="inputform" id="personalForm">
+                    <label for="nama">Nama</label>
+                    <span>:</span>
+                    <input id="nama" type="text" placeholder="Nama Anda">
+                    
+                    <label for="tl">Tanggal Lahir</label>
+                    <span>:</span>
+                    <input id="tl" type="date">
+    
+                    <label for="kelamin">Jenis Kelamin</label>
+                    <span>:</span>
+                    <div>
+                        <input type="radio" name="jeniskelamin" id="laki" value="Laki-Laki">
+                        <label for="laki" style="margin-right: 8px;">Laki-Laki</label>
+                        <input type="radio" name="jeniskelamin" id="perempuan" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <label for="pesan">Pesan</label>
+                    <span class="textspan">:</span>
+                    <textarea id="pesan"></textarea>
+    
+                    <button type="submit" id="submitbtn">Submit</button>
+                </form>
+    
+                <userdata class="userdata">
+                        <div id="formdatadisplay" class="grid-container">
+                        </div>
+                </userdata>
+            </main>
+        </section>
+    
+        <footer>
+            <p>Created By Mirza</p>
+        </footer>
 
-    <footer>
-        <p>Created By Mirza</p>
-    </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
