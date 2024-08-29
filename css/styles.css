@@ -3,7 +3,7 @@
     border: 1px solid black;
     height: 50px;
     width: 50px;
-    background-image: url(../Media/logo.jpeg);
+    background-image: url(../assets/logo.jpeg);
     border-radius: 50%;
     margin-left: 10px;
     background-size: cover;
@@ -72,13 +72,13 @@
     background-position: center;
 }
 .article1>main>header>div:nth-child(1){
-    background-image: url(../Media/sekolah1.jpeg);
+    background-image: url(../assets/sekolah.jpeg);
 }
 .article1>main>header>div:nth-child(2){
-    background-image: url(../Media/sekolah2.jpeg);
+    background-image: url(../assets/sekolah2.jpeg);
 }
 .article1>main>header>div:nth-child(3){
-    background-image: url(../Media/sekolah.jpeg);
+    background-image: url(../assets/sekolah.jpeg);
 }
 .article1>main{
     padding: 10px 0px;
@@ -92,7 +92,7 @@
 
 @font-face {
     font-family: HelveticaNeue;
-    src: url(../Media/HelveticaNeueLight.otf);
+    src: url(../assets/HelveticaNeueLight.otf);
 }
 body{
     margin: 0;

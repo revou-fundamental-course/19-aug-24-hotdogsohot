@@ -1,9 +1,13 @@
+
+//Bagian input nama 
 function firstuser(){
     let firstuser= prompt('Masukan nama anda!')
     document.getElementById('user').innerHTML = firstuser
 }
 firstuser()
 
+
+//Bagian autoslide image
 var slideIndex = 1 
 showSlide(slideIndex)
 
@@ -13,6 +17,8 @@ function addSlide(n){
 
 function currentSlide(n){
     showSlide(slideIndex = n)
+    clearInterval(MyInterval)
+    automaticSlide()
 }
 
 function showSlide(n){
@@ -31,11 +37,16 @@ function showSlide(n){
     button[slideIndex-1].classList.add('active')
 }
 
-setInterval(function(){
-    addSlide(1);
-}, 3000);
+function automaticSlide(){
+    MyInterval = setInterval(() => {
+        addSlide(1)
+    }, 3000);
+}
+automaticSlide()
 
-document.getElementById('personalForm').addEventListener('submit', function(event) {
+
+//Function untuk menunjukkan input form
+document.getElementById('personalForm').addEventListener('submit', function(event) {  
     event.preventDefault();
 
     const name = document.getElementById('nama').value;
